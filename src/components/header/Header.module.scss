@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: $header-height;
+    padding: 0 21px;
+    
+    background-color: none;
+
+    &.scrolled {
+        background-color: $background-primary;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $border-primary;
+        }
+    }
+
+    &_title {
+        font-weight: 900;
+        font-size: 1.75em;
+
+        // color: $text-primary;
+    }
+
+    &_nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+
+        list-style-type: none;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3px;
+
+            font-weight: 700;
+            font-size: 1.25em;
+            
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: scale(1.7);
+        }
+    }
+}
