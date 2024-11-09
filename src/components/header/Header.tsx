@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faFileArrowDown, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faEnvelope, faFileArrowDown, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames';
 import styles from './Header.module.scss'
@@ -8,11 +8,19 @@ import styles from './Header.module.scss'
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
+
+  
+  const email = "cedricpayet.dev@gmail.com";
 
   const handleScroll = () => {
     const isScrolled = window.scrollY > 0;
     setScrolled(isScrolled);
   };
+
+  const handleLightModeToggle = () => {
+    setLightMode(!lightMode);
+  }
   
 
   useEffect(() => {
@@ -25,29 +33,37 @@ function Header() {
   return (
     <header className={classNames(styles.header, { [styles.scrolled]: scrolled })}>
         <h1 className={styles.header_title}>Portfolio</h1>
-        <nav className={styles.header_nav}>
-          <ul>
+          <ul className={styles.header_controls}>
             <li>
-            <FontAwesomeIcon icon={faLinkedin} />
+              <a href='https://www.linkedin.com/in/cédric-payet' target='_blank'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <a href='mailto:${email}'>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
             </li>
             <li
-              onMouseEnter={() => setIsHovered(true)} // Quand la souris entre
-              onMouseLeave={() => setIsHovered(false)} // Quand la souris quitte
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              {isHovered ? (
-                <FontAwesomeIcon icon={faFileArrowDown} />
+              <a href="../../assets/react.svg" download="Cédric_Payet_CV.svg">
+                {isHovered ? (
+                  <FontAwesomeIcon icon={faFileArrowDown} />
+                ) : (
+                  <FontAwesomeIcon icon={faFile} />
+                )}
+              </a>
+            </li>
+            <li onClick={handleLightModeToggle}>
+              {lightMode ? (
+                <FontAwesomeIcon icon={faSun} />
               ) : (
-                'CV'
+                <FontAwesomeIcon icon={faMoon} />
               )}
-            </li>
-            <li>
-            <FontAwesomeIcon icon={faMoon} />
-            </li>
+          </li>
           </ul>
-        </nav>
     </header>
   )
 }
