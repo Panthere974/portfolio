@@ -1,5 +1,1 @@
-@import '../../styles/variables.scss';
-
-#root {
-  margin-top: calc($header-height + 14px);
-}
+@use '../../styles/main.scss';

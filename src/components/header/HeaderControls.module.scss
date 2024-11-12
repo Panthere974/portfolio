@@ -1,0 +1,29 @@
+@use "../../styles/main.scss";
+
+.header {
+    &_controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+
+        list-style-type: none;
+
+        & li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3px;
+
+            font-weight: 700;
+            font-size: 1.25em;
+            
+            transition: transform 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.7);
+            }
+        }
+    }
+}

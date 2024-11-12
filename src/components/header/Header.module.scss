@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@use "../../styles/main.scss";
 
 .header {
     position: fixed;
@@ -12,13 +12,17 @@
     align-items: center;
     
     width: 100%;
-    height: $header-height;
+    height: var(--header-height);
     padding: 0 21px;
     
-    background-color: none;
+    background-color: transparent;
+
+    & * {
+        color: var(--text-primary);
+    }
 
     &.scrolled {
-        background-color: $background-primary;
+        background-color: var(--background-primary);
 
         &::after {
             content: "";
@@ -27,39 +31,12 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background-color: $border-primary;
+            background-color: var(--border-primary);
         }
     }
 
     &_title {
         font-weight: 900;
         font-size: 1.75em;
-
-        // color: $text-primary;
-    }
-
-    &_controls {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 14px;
-
-        list-style-type: none;
-
-        li {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 3px;
-
-            font-weight: 700;
-            font-size: 1.25em;
-            
-            transition: transform 0.3s ease;
-        }
-
-        li:hover {
-            transform: scale(1.7);
-        }
     }
 }

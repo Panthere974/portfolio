@@ -1,0 +1,12 @@
+:root {
+    --background-primary:#FDFDFF;
+    --text-primary: #5753C6;
+    --border-primary: rgba(39, 41, 98, 0.3);
+    --header-height: 42px;
+}
+
+[data-theme="dark"] {
+    --background-primary: #13131E;
+    --text-primary: #B1A9FF;
+    --border-primary: rgba(224, 223, 254, 0.3);
+}
