@@ -1,10 +1,9 @@
-@use "../../styles/main.scss";
+@use '../../styles/main' as *;
 
 .header {
     &_controls {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex-box(row, center, center);
+
         gap: 14px;
 
         list-style-type: none;
