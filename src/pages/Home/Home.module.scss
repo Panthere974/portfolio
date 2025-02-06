@@ -1,2 +1,26 @@
 @use '../../styles/main' as *;
 
+.page {
+    @include flex-box(column, center, center);
+    
+    gap: 140px;
+}
+
+.introduction {
+    @include flex-box(row, space-between, center);
+    gap: 42px;
+}
+
+.about {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.skills {
+    color: var(--text-primary);
+    @include flex-box(column, center, center);
+
+    &_title {
+        font-size: 28px;
+    }
+}
