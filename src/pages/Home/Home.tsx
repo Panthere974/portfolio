@@ -1,4 +1,6 @@
 import TextSection from "../../components/text_section/TextSection";
+import SkillCard from "../../components/skill_card/SkillCard";
+import ProjectCard from "../../components/project_card/ProjectCard";
 import styles from "./Home.module.scss";
 
 function App() {
@@ -28,6 +30,25 @@ function App() {
       <section id="skills" className={styles.skills}>
         <h2 className={styles.skills_title}>Mes compétences</h2>
         <p>de Développeur Full-Stack</p>
+        <div className={styles.skills_cards}>
+          <SkillCard></SkillCard>
+          <SkillCard></SkillCard>
+          <SkillCard></SkillCard>
+          <SkillCard></SkillCard>
+          <SkillCard></SkillCard>
+          <SkillCard></SkillCard>
+        </div>
+      </section>
+      <section id="projects" className={styles.projects}>
+        <h2 className={styles.projects_title}>Mes projets</h2>
+        <p>de Développeur Full-Stack</p>
+        <div className={styles.projects_cards}>
+          <ProjectCard/>
+          <ProjectCard/>
+          <ProjectCard/>
+          <ProjectCard/>
+          <ProjectCard/>
+        </div>
       </section>
     </div>
   )

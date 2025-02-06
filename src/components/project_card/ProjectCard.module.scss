@@ -1,0 +1,34 @@
+@use '../../styles/main' as *;
+
+.project_card {
+    @include flex-box(column, center, start);
+
+    width: calc(33% - 42px);
+    height: 189px;
+    padding: 7px;
+
+    border: 1px solid var(--border-primary);
+    border-radius: 14px;
+    background-color: var(--background-primary);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+
+    p {
+        font-size: 13px;
+    }
+
+    &_image_container {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 7px;
+        overflow: hidden;
+        
+        border-radius: 7px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}

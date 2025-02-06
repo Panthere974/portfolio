@@ -1,0 +1,13 @@
+@use '../../styles/main' as *;
+
+.skill_card {
+    @include flex-box(column, center, center);
+
+    width: calc(33% - 42px);
+    height: 189px;
+    
+    border: 1px solid var(--border-primary);
+    border-radius: 14px;
+    background-color: var(--background-primary);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
