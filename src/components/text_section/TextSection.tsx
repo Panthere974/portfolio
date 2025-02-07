@@ -1,20 +1,23 @@
+import classNames from "classnames";
 import styles from "./TextSection.module.scss";
 
 interface TextSectionProps {
   title : string;
+  titleSize: "small" | "medium" | "large";
   paragraph : string;
-  showName? : boolean;
+  centerTextAlign? : boolean;
 }
 
-function TextSection({title, paragraph, showName = false} : TextSectionProps) {
+function TextSection({title, titleSize = "small", paragraph, centerTextAlign = false} : TextSectionProps) {
 
   return (
-    <section className={styles.text_section}>
-      {showName && 
-        <p className={styles.text_section_name}>Je suis <strong>Cédric Payet</strong></p>
-      }
-      <h2 className={showName ? styles.text_section_title : styles.text_section_big_title}>{title}</h2>
-      <p className={showName ? styles.text_section_paragraph : styles.text_section_paragraph_center}>{paragraph}</p>
+    <section className={classNames(styles.text_section, {[styles.center_text_align]: centerTextAlign})}>
+      <h2 className={classNames(styles.text_section_title, {
+          [styles.small]: titleSize === "small",
+          [styles.medium]: titleSize === "medium",
+          [styles.large]: titleSize === "large",
+        })}>{title}</h2>
+      <p className={styles.text_section_paragraph}>{paragraph}</p>
     </section>
   )
 }

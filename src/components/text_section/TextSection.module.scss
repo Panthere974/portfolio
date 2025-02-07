@@ -1,22 +1,28 @@
 @use '../../styles/main' as *;
 
 .text_section {
-    flex: 1;
 
-    & * {
-        color: var(--text-primary);
+    &_title.small {
+        font-size: 28px;
     }
 
-    &_title {
+    &_title.medium {  
         font-size: 42px;
+    }
+    
+    &_title.large {
+        font-size: 70px;
     }
 
     &_big_title {
-        font-size: 70px;
         text-align: center;
     }
 
     &_paragraph_center {
         text-align: center;
     }
+}
+
+.text_section.center_text_align {
+    text-align: center;
 }

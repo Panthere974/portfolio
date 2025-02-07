@@ -8,28 +8,37 @@ function App() {
   return (
     <div className={styles.page}>
       <section className={styles.introduction}>
+      <div style={{ flex: 1 }}>
+      <p>Je suis <strong>Cédric Payet</strong></p>
         <TextSection 
           title="Développeur Full Stack"
+          titleSize="medium"
           paragraph="Développeur Full-Stack passionné, spécialisé en React pour des interfaces dynamiques 
             et en Node.js pour des backends performants.
-            J’aime concevoir des applications modernes, optimisées et évolutives."
-          showName={true}>
+            J’aime concevoir des applications modernes, optimisées et évolutives.">
         </TextSection>
+      </div>
         <div style={{ flex: 1 }}></div>
       </section>
       <section id="about" className={styles.about}>
         <TextSection
           title="À propos de moi"
+          titleSize="large"
           paragraph="Développeur Full-Stack, je conçois des applications modernes et performantes 
           en mettant l'accent sur l'expérience utilisateur et l'optimisation du code. 
           Actuellement en validation de mon diplôme de Développeur Web, 
           je suis constamment à la recherche de nouvelles opportunités pour innover et relever des défis techniques.
-          Parcourez mon portfolio pour découvrir mes réalisations.">
+          Parcourez mon portfolio pour découvrir mes réalisations."
+          centerTextAlign={true}>
         </TextSection>
       </section>
       <section id="skills" className={styles.skills}>
-        <h2 className={styles.skills_title}>Mes compétences</h2>
-        <p>de Développeur Full-Stack</p>
+        <TextSection
+          title="Mes compétences"
+          titleSize="small"
+          paragraph="de Développeur Full-Stack"
+          centerTextAlign={true}>
+        </TextSection>
         <div className={styles.skills_cards}>
           <SkillCard></SkillCard>
           <SkillCard></SkillCard>
@@ -40,8 +49,12 @@ function App() {
         </div>
       </section>
       <section id="projects" className={styles.projects}>
-        <h2 className={styles.projects_title}>Mes projets</h2>
-        <p>de Développeur Full-Stack</p>
+        <TextSection
+          title="Mes projets"
+          titleSize="small"
+          paragraph="de Développeur Full-Stack"
+          centerTextAlign={true}>
+        </TextSection>
         <div className={styles.projects_cards}>
           <ProjectCard/>
           <ProjectCard/>
