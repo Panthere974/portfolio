@@ -8,7 +8,7 @@ function Header() {
         <nav className={styles.header_nav}>
             <HashLink className={styles.hashlink} smooth to="#about">À propos</HashLink>
             <HashLink className={styles.hashlink} smooth to="#skills">Compétences</HashLink>
-            <HashLink className={styles.hashlink} smooth to="#projects">Mes projets</HashLink>
+            <HashLink className={styles.hashlink} smooth to="#projects">Projets</HashLink>
         </nav>
     </header>
   );

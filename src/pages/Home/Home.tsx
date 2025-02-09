@@ -7,17 +7,17 @@ function App() {
   return (
     <div className={styles.page}>
       <section className={styles.introduction}>
-      <div style={{ flex: 1 }}>
-      <p>Je suis <strong>Cédric Payet</strong></p>
-        <TextSection 
-          title="Développeur Full Stack"
-          titleSize="medium"
-          paragraph="Développeur Full-Stack passionné, spécialisé en React pour des interfaces dynamiques 
-            et en Node.js pour des backends performants.
-            J’aime concevoir des applications modernes, optimisées et évolutives.">
-        </TextSection>
-      </div>
-        <div style={{ flex: 1 }}></div>
+        <div className={styles.introduction_section}>
+          <p>Je suis <strong>Cédric Payet</strong></p>
+            <TextSection 
+              title="Développeur Full Stack"
+              titleSize="medium"
+              paragraph="Développeur Full-Stack passionné, spécialisé en React pour des interfaces dynamiques 
+                et en Node.js pour des backends performants.
+                J’aime concevoir des applications modernes, optimisées et évolutives.">
+            </TextSection>
+        </div>
+        <div className={styles.introduction_section}></div>
       </section>
       <section id="about" className={styles.about}>
         <TextSection
@@ -41,27 +41,27 @@ function App() {
         <div className={styles.skills_cards}>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
           <Card 
             title="Développement Front-End"
-            paragraph="Développer des sites web avec React.js">
+            subtitle="Développer des sites web avec React.js">
           </Card>
         </div>
       </section>
@@ -73,27 +73,14 @@ function App() {
           centerTextAlign={true}>
         </TextSection>
         <div className={styles.projects_cards}>
-        <Card 
-          title="Développement Front-End"
-          paragraph="Développer des sites web avec React.js"
-          image="/image/custom-software.jpeg"
-          imageAlt="Description de l'image"
-          option="project_card">
-        </Card>
-        <Card 
-          title="Développement Front-End"
-          paragraph="Développer des sites web avec React.js"
-          image="/image/custom-software.jpeg"
-          imageAlt="Description de l'image"
-          option="project_card">
-        </Card>
-        <Card 
-          title="Développement Front-End"
-          paragraph="Développer des sites web avec React.js"
-          image="/image/custom-software.jpeg"
-          imageAlt="Description de l'image"
-          option="project_card">
-        </Card>
+          <Card 
+            title="Développement Front-End"
+            subtitle="Développer des sites web avec React.js"
+            paragraph="J'aime bien ce que j'ai fait."
+            image="/image/custom-software.jpeg"
+            imageAlt="Description de l'image"
+            option="project_card">
+          </Card>
         </div>
       </section>
     </div>

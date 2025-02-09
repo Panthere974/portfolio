@@ -4,13 +4,22 @@
     @include flex-box(column, center, center);
 
     width: calc(33% - 42px);
-    height: 189px;
+    min-height: 189px;
+    max-height: 189px;
     padding: 7px;
     
     border: 1px solid var(--border-primary);
     border-radius: 14px;
     background-color: var(--background-primary);
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+
+    
+    &.toggle_open {
+        max-height: 500px;
+    }
 
     &_image_container {
         width: 100%;
@@ -36,6 +45,16 @@
 
         &.project_card {
             align-items: flex-start;
+
+            .toggle_content {
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+
+                &.toggle_open {
+                    max-height: 500px;
+                }
+            }
 
             p {
                 font-size: 12.6px;
