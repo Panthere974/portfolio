@@ -1,30 +1,11 @@
-import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import {SunIcon, MoonIcon} from "@radix-ui/react-icons";
+import { useTheme } from "../../context/ThemeContext";
 import styles from "./Header.module.scss";
 
 function Header() {
 
-  const getInitialTheme = () => {
-    const localStorageTheme = localStorage.getItem("theme");
-    return localStorageTheme === "light";
-  };
-  
-  const [isLightTheme, setIsLightTheme] = useState(getInitialTheme);
-
-  useEffect(() => {
-    if (isLightTheme) {
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }, [isLightTheme]);
-
-  function switchTheme() {
-    setIsLightTheme(!isLightTheme);
-  }
+  const { isLightTheme, switchTheme } = useTheme();
 
   return (
     <header className={styles.header}>

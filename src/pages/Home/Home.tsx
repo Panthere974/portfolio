@@ -1,9 +1,12 @@
 import classNames from "classnames";
 import TextSection from "../../components/text_section/TextSection";
 import Card from "../../components/card/Card";
+import { useTheme } from "../../context/ThemeContext";
 import styles from "./Home.module.scss";
 
 function App() {
+
+  const { isLightTheme } = useTheme();
 
   return (
     <div className={styles.page}>
@@ -19,7 +22,7 @@ function App() {
             </TextSection>
         </div>
         <div className={classNames(styles.introduction_section, styles.right)}>
-          <img src="/image/dev.svg"/>
+          <img src={isLightTheme ? "/image/light-dev.svg" : "/image/dark-dev.svg"}/>
         </div>
       </section>
       <section id="about" className={styles.about}>
