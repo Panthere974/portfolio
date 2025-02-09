@@ -10,7 +10,12 @@
         gap: 35px;
 
         &_icon {
-            font-weight: bolder;
+            width: 21px;
+            height: 21px;
+
+            &:hover {
+                color: var(--icon-primary);
+            }
         }
 
         .hashlink:hover {
