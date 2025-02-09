@@ -1,6 +1,5 @@
 import TextSection from "../../components/text_section/TextSection";
-import SkillCard from "../../components/skill_card/SkillCard";
-import ProjectCard from "../../components/project_card/ProjectCard";
+import Card from "../../components/card/Card";
 import styles from "./Home.module.scss";
 
 function App() {
@@ -40,12 +39,30 @@ function App() {
           centerTextAlign={true}>
         </TextSection>
         <div className={styles.skills_cards}>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
+          <Card 
+            title="Développement Front-End"
+            paragraph="Développer des sites web avec React.js">
+          </Card>
         </div>
       </section>
       <section id="projects" className={styles.projects}>
@@ -56,11 +73,27 @@ function App() {
           centerTextAlign={true}>
         </TextSection>
         <div className={styles.projects_cards}>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
+        <Card 
+          title="Développement Front-End"
+          paragraph="Développer des sites web avec React.js"
+          image="/image/custom-software.jpeg"
+          imageAlt="Description de l'image"
+          option="project_card">
+        </Card>
+        <Card 
+          title="Développement Front-End"
+          paragraph="Développer des sites web avec React.js"
+          image="/image/custom-software.jpeg"
+          imageAlt="Description de l'image"
+          option="project_card">
+        </Card>
+        <Card 
+          title="Développement Front-End"
+          paragraph="Développer des sites web avec React.js"
+          image="/image/custom-software.jpeg"
+          imageAlt="Description de l'image"
+          option="project_card">
+        </Card>
         </div>
       </section>
     </div>

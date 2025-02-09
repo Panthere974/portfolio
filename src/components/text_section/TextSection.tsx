@@ -3,7 +3,7 @@ import styles from "./TextSection.module.scss";
 
 interface TextSectionProps {
   title : string;
-  titleSize: "small" | "medium" | "large";
+  titleSize : "small" | "medium" | "large";
   paragraph : string;
   centerTextAlign? : boolean;
 }

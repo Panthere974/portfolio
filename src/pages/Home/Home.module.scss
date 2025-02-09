@@ -16,31 +16,10 @@
     margin-right: 140px;
 }
 
-.skills {
+.skills, .projects {
     @include flex-box(column, center, center);
 
     width: 100%;
-
-    &_title {
-        font-size: 28px;
-    }
-
-    &_cards {
-        @include flex-box(row, center, center);
-        flex-wrap: wrap;
-
-        width: 100%;
-        padding-top: 42px;
-        gap: 21px;
-    }
-}
-
-.projects {
-    @include flex-box(column, center, center);
-
-    &_title {
-        font-size: 28px;
-    }
 
     &_cards {
         @include flex-box(row, center, center);
