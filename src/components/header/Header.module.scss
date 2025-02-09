@@ -4,18 +4,17 @@
     @include flex-box(row, space-between, center);
 
     margin-bottom: 47px;
-    background-color: var(--background-primary);
-
-    & * {
-        color: var(--text-primary);
-    }
 
     &_nav {
         @include flex-box(row, flex-end, center);
         gap: 35px;
-    }
 
-    .hashlink:hover {
-        text-decoration: underline;
+        &_icon {
+            font-weight: bolder;
+        }
+
+        .hashlink:hover {
+            text-decoration: underline;
+        }
     }
 }

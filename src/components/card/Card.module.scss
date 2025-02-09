@@ -14,7 +14,7 @@
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 
     
     &.toggle_open {
@@ -49,7 +49,7 @@
             .toggle_content {
                 max-height: 0px;
                 overflow: hidden;
-                transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
 
                 &.toggle_open {
                     max-height: 500px;

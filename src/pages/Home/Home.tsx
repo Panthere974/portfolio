@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import TextSection from "../../components/text_section/TextSection";
 import Card from "../../components/card/Card";
 import styles from "./Home.module.scss";
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className={styles.page}>
       <section className={styles.introduction}>
-        <div className={styles.introduction_section}>
+        <div className={classNames(styles.introduction_section, styles.left)}>
           <p>Je suis <strong>Cédric Payet</strong></p>
             <TextSection 
               title="Développeur Full Stack"
@@ -17,7 +18,9 @@ function App() {
                 J’aime concevoir des applications modernes, optimisées et évolutives.">
             </TextSection>
         </div>
-        <div className={styles.introduction_section}></div>
+        <div className={classNames(styles.introduction_section, styles.right)}>
+          <img src="/image/dev.svg"/>
+        </div>
       </section>
       <section id="about" className={styles.about}>
         <TextSection

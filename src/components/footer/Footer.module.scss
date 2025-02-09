@@ -1,0 +1,12 @@
+@use '../../styles/main' as *;
+
+.footer {
+    @include flex-box(row, space-between, center);
+
+    height: 47px;
+    margin-top: 47px;
+
+    &_link:hover {
+            font-weight: bolder;
+    }
+}

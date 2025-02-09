@@ -12,6 +12,19 @@
 
     &_section {
         flex: 1;
+        overflow: hidden;
+
+        img {
+            height: 350px;
+        }
+
+        &.left {
+            text-align: left;
+        }
+
+        &.right {
+            text-align: center;
+        }
     }
 }
 
