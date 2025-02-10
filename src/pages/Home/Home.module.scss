@@ -29,8 +29,28 @@
 }
 
 .about {
+    @include flex-box(column, center, center);
+
     margin-left: 140px;
     margin-right: 140px;
+
+    &_contact_button {
+        
+        margin-top: 14px;
+        padding: 14px;
+
+        color: var(--text-secondary);
+        border-radius: 14px;
+        border: 1px solid var(--border-secondary);
+        background-color: var(--background-secondary);
+        box-shadow: 7px 7px 7px var(--box-shadow);
+
+        &:hover {
+            color: var(--text-secondary-accent);
+            border-color: var(--border-secondary-accent);
+            box-shadow: 3px 3px 3px var(--box-shadow);
+        }
+    }
 }
 
 .skills, .projects {

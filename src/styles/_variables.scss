@@ -1,8 +1,14 @@
 :root {
     --background-primary: #F8F8FF;
+    --background-secondary: #26997B;
     --border-primary: #9B9EF0;
+    --border-secondary: #ACDEC8;
+    --border-secondary-accent: #56BA9F;
     --text-primary: #272962;
+    --text-secondary: #E6F7ED;
+    --text-secondary-accent: #1D3B31;
     --icon-primary: #FFDC00;
+    --box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 // [data-theme="dark"] {
@@ -10,4 +16,6 @@
 //     --background-secondary: #13131E;
 //     --text-primary: #B1A9FF;
 //     --border-primary: rgba(224, 223, 254, 0.3);
+
+        // --box-shadow: rgba(255, 255, 255, 0.5);
 // }

@@ -36,6 +36,12 @@ function App() {
           Parcourez mon portfolio pour découvrir mes réalisations."
           centerTextAlign={true}>
         </TextSection>
+        <a 
+          className={styles.about_contact_button}
+          target='_blank'
+          rel='noopener noreferrer'href="https://www.linkedin.com/in/c%C3%A9dric-payet/">
+            Mon LinkedIn
+        </a>
       </section>
       <section id="skills" className={styles.skills}>
         <TextSection
