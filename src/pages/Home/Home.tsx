@@ -52,28 +52,24 @@ function App() {
         </TextSection>
         <div className={styles.skills_cards}>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
+            title="React.js"
+            subtitle="Développement d'interfaces utilisateur dynamiques et performantes">
           </Card>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
+            title="JavaScript"
+            subtitle="Interactivité avancée et manipulation du DOM">
           </Card>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
+            title="Node.js"
+            subtitle="Création d'APIs RESTful et gestion de bases de données">
           </Card>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
+            title="NoSQL"
+            subtitle="Conception de schémas et gestion des données">
           </Card>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
-          </Card>
-          <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js">
+            title="Responsive Design"
+            subtitle="Adaptation des sites à toutes les tailles d'écrans pour une expérience fluide">
           </Card>
         </div>
       </section>
