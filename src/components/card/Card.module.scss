@@ -19,7 +19,7 @@
 
     
     &.toggle_open {
-        max-height: 500px;
+        max-height: 1000px;
     }
 
     &_image_container {
@@ -74,7 +74,7 @@
                 transition: max-height 0.5s ease-in-out;
 
                 &.toggle_open {
-                    max-height: 500px;
+                    max-height: 1000px;
                 }
             }
         }

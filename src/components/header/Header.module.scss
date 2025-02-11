@@ -9,6 +9,10 @@
         @include flex-box(row, flex-end, center);
         gap: 35px;
 
+        &_hashlink:hover {
+            text-decoration: underline;
+        }
+
         &_icon {
             width: 21px;
             height: 21px;
@@ -18,8 +22,36 @@
             }
         }
 
-        .hashlink:hover {
-            text-decoration: underline;
+        &_theme {
+            display: none;
         }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+
+        &_nav {
+            width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            
+            gap: 10px;
+
+            &_hashlink, &_theme {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: calc(50% - 10px);
+            }
+
+            &_icon {
+                display: none;
+            }
+        }
+
     }
 }

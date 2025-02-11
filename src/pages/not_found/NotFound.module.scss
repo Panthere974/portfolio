@@ -1,0 +1,31 @@
+@use '../../styles/main' as *;
+
+.page {
+    @include flex-box(column, center, center);
+    height: 100vh;
+
+    h1 {
+        font-size: 175px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    a {
+        margin-top: 14px;
+        padding: 14px;
+
+        color: var(--text-secondary);
+        border-radius: 14px;
+        border: 1px solid var(--border-secondary);
+        background-color: var(--background-secondary);
+        box-shadow: 7px 7px 7px var(--box-shadow);
+
+        &:hover {
+            color: var(--text-secondary-accent);
+            border-color: var(--border-secondary-accent);
+            box-shadow: 3px 3px 3px var(--box-shadow);
+        }
+    }
+}
