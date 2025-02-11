@@ -69,6 +69,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .page {
+        gap: 70px;
+    }
     
     .introduction {
         flex-direction: column-reverse;
@@ -87,5 +91,10 @@
                 height: auto;
             }
         }
-    }    
+    }
+
+    .about {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }

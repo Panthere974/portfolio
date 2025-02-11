@@ -23,5 +23,10 @@
 
     .text_section { 
         text-align: center;
+        
+        &_title.large {
+            font-size: 42px;
+        }
+
     }
 }
