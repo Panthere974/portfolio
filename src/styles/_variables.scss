@@ -11,11 +11,14 @@
     --box-shadow: rgba(0, 0, 0, 0.5);
 }
 
-// [data-theme="dark"] {
-//     --background-primary: #171625;
-//     --background-secondary: #13131E;
-//     --text-primary: #B1A9FF;
-//     --border-primary: rgba(224, 223, 254, 0.3);
-
-        // --box-shadow: rgba(255, 255, 255, 0.5);
-// }
+[data-theme="dark"] {
+    --background-primary: #171625;
+    --background-secondary: #27B08B;
+    --border-primary: #5958B1;
+    --border-secondary: #114837;
+    --border-secondary-accent: #2A7E68;
+    --text-primary: #E0DFFE;
+    --text-secondary: #0F2E22;
+    --text-secondary-accent: #ADF0D4;
+    --icon-primary: #BBBBBB;
+}
