@@ -34,12 +34,14 @@
         flex-direction: column;
         justify-content: center;
 
+        gap: 14px;
+
         &_nav {
             width: 100%;
             justify-content: flex-start;
             flex-wrap: wrap;
             
-            gap: 10px;
+            gap: 7px;
 
             &_hashlink, &_theme {
                 display: flex;

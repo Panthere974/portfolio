@@ -1,5 +1,4 @@
 @use '../../styles/main' as *;
-@import '_responsive.Card.module.scss';
 
 .page {
     @include flex-box(column, center, center);
@@ -67,4 +66,26 @@
         padding-top: 42px;
         gap: 21px;
     }
+}
+
+@media (max-width: 768px) {
+    
+    .introduction {
+        flex-direction: column-reverse;
+
+        gap: 14px;
+
+        &_section {
+            flex: none;
+
+            p {
+                text-align: center;
+            }
+
+            img {
+                width: 33%;
+                height: auto;
+            }
+        }
+    }    
 }
