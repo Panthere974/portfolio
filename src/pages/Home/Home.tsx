@@ -77,16 +77,26 @@ function App() {
         <TextSection
           title="Mes projets"
           titleSize="small"
-          paragraph="de Développeur Full-Stack"
+          paragraph="sur OpenClassrooms"
           centerTextAlign={true}>
         </TextSection>
         <div className={styles.projects_cards}>
           <Card 
-            title="Développement Front-End"
-            subtitle="Développer des sites web avec React.js"
-            paragraph="J'aime bien ce que j'ai fait."
+            title="Site de location immobilière"
+            subtitle="Créez une application web avec React"
+            paragraph="Projet de création d'une application de location immobilière avec React, permettant de configurer la navigation avec React Router et d'initialiser l'application via Create React App. Ce projet a permis de développer des compétences dans la création de composants React réutilisables, la gestion des états d'une application, ainsi que la mise en place d'une interface utilisateur dynamique et fonctionnelle."
             image="/image/custom-software.jpeg"
             imageAlt="Description de l'image"
+            githubProjectLink="https://github.com/Panthere974/projet-5"
+            option="project_card">
+          </Card>
+          <Card 
+            title="Back-end d'un site de notation de livres"
+            subtitle="Créez un système de gestion de données"
+            paragraph="Projet de mise en œuvre d'un système de gestion de données conforme à la réglementation, permettant d'implémenter un modèle logique de données robuste. Ce projet a permis de développer des compétences dans la création et la gestion d'opérations CRUD (création, lecture, mise à jour, suppression) sécurisées, ainsi que dans la mise en place de pratiques de stockage de données sécurisé, garantissant la protection et la confidentialité des informations sensibles."
+            image="/image/custom-software.jpeg"
+            imageAlt="Description de l'image"
+            githubProjectLink="https://github.com/Panthere974/projet-6"
             option="project_card">
           </Card>
         </div>
