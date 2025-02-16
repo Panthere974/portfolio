@@ -22,7 +22,7 @@ function App() {
             </TextSection>
         </div>
         <div className={classNames(styles.introduction_section, styles.right)}>
-          <img src={isLightTheme ? "/image/light-dev.svg" : "/image/dark-dev.svg"}/>
+          <img src={isLightTheme ? "/portfolio/image/light-dev.svg" : "/portfolio/image/dark-dev.svg"}/>
         </div>
       </section>
       <section id="about" className={styles.about}>
@@ -85,7 +85,7 @@ function App() {
             title="Site de location immobilière"
             subtitle="Créez une application web avec React"
             paragraph="Projet de création d'une application de location immobilière avec React, permettant de configurer la navigation avec React Router et d'initialiser l'application via Create React App. Ce projet a permis de développer des compétences dans la création de composants React réutilisables, ainsi que la mise en place d'une interface utilisateur dynamique et fonctionnelle."
-            image="/image/project_5.png"
+            image="/portfolio/image/project_5.png"
             imageAlt="Description de l'image"
             githubProjectLink="https://github.com/Panthere974/projet-5"
             option="project_card">
@@ -94,7 +94,7 @@ function App() {
             title="Back-end d'un site de notation de livres"
             subtitle="Créez un système de gestion de données"
             paragraph="Projet de mise en œuvre d'un serveur avec Express, permettant d'implémenter un modèle logique de données. Ce projet a permis de développer des compétences dans la création et la gestion d'opérations CRUD sécurisées, ainsi que dans la mise en place de pratiques de stockage de données sécurisé avec MongoDB."
-            image="/image/project_6.png"
+            image="/portfolio/image/project_6.png"
             imageAlt="Description de l'image"
             githubProjectLink="https://github.com/Panthere974/projet-6"
             option="project_card">
